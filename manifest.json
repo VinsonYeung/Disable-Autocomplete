@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Disable Autocomplete",
+  "version": "1.0",
+  "description": "Block inputs from showing automplete results.",
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "permissions": [
+      "activeTab"
+  ]
+}
